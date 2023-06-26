@@ -1,0 +1,64 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.linkedEditing": true,
+    "git.inputValidationSubjectLength": 72,
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "html.format.enable": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.fontLigatures": false,
+    "breadcrumbs.enabled": true,
+    "css.lint.important": "warning",
+    "scss.lint.important": "warning",
+    "debug.toolBarLocation": "docked",
+    "editor.lineHeight": 22,
+    "_comment_about_cursorStyle_": "block, block-outline, line, line-thin, underline, or underline-thin",
+    "editor.cursorStyle": "line",
+    "_comment_about_cursorBlinking_": "blink, smooth, phase, expand, or solid",
+    "editor.cursorBlinking": "smooth",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.inlayHints.enabled": "on",
+
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true,
+    },
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 2500,
+    },
+    "javascript.format.enable": true,
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+
+    "[markdown]": {
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off",
+        },
+
+    },
+        "markdown.preview.scrollEditorWithPreview": true,
+        "markdown.preview.scrollPreviewWithEditor": true,
+
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "python.defaultInterpreterPath": $HOME/venv/bin/python,
+    "files.associations": {
+        "*.vpy": "python"
+    },
+}
