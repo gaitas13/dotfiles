@@ -23,11 +23,11 @@
 //!PARAM intensity_coeff
 //!TYPE float
 //!MINIMUM 0.0
-256.0
+512.0
 
 //!HOOK CHROMA
-//!BIND CHROMA
 //!BIND LUMA
+//!BIND CHROMA
 //!WIDTH LUMA.w
 //!HEIGHT LUMA.h
 //!WHEN CHROMA.w LUMA.w <
