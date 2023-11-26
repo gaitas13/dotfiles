@@ -273,7 +273,7 @@ icc-intent=0
 
 [android-decent-hw]
 
-scale=catmull_rom
+scale=lanczos
 
 dscale=hermite
 
