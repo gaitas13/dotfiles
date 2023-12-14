@@ -1,0 +1,1 @@
+nvidia-smi -i 0 --query-supported-clocks=mem,gr --format=csv

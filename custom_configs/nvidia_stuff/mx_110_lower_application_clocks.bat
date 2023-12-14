@@ -1,0 +1,1 @@
+nvidia-smi -i 0 -ac 2233,1032
