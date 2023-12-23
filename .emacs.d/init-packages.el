@@ -1,15 +1,18 @@
 (require 'package)
 
-(add-to-list 'package-archives
-             '("elpy" . "http://jorgenschaefer.github.io/packages/"))
+
+;; (add-to-list 'package-archives
+;;             '("elpy" . "http://jorgenschaefer.github.io/packages/"))
+
+;; (add-to-list 'package-archives
+;;             '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/"))
+            '("melpa" . "https://melpa.org/packages/") t)
 
-(add-to-list 'package-archives
-             '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
 
-(add-to-list 'load-path "~/.emacs.d/site-lisp/")
+
+;;(add-to-list 'load-path "~/.emacs.d/site-lisp/")
 
 
 
@@ -22,7 +25,8 @@
 ; list the packages you want
 (setq package-list
     '(
-        magit
+        magit company projectile evil lsp-mode rust-mode
+        hl-todo treemacs unicode-emoticons
           ))
 
 
