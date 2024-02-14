@@ -1,0 +1,4 @@
+. "$HOME/.cargo/env"
+#. "$HOME/.config/emacs/bin"
+alias fd=fdfind
+alias doom='$HOME/.config/emacs/bin/doom'

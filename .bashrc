@@ -137,5 +137,4 @@ source "$OSH"/oh-my-bash.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias bashconfig="mate ~/.bashrc"
-# alias ohmybash="mate ~/.oh-my-bash"
+. ~/custom_aliases
