@@ -20,7 +20,7 @@ configuration {
 }
 
 /* ---- Load pywal colors (custom wal template) ---- */
-@import "~/.config/rofi/pywal-color/pywal-theme.rasi"
+@theme "themelink"
 
 /* ---- Window ---- */
 window {
