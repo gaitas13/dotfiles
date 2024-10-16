@@ -13,6 +13,7 @@
 @define-color blue #8aadf4;
 @define-color lavender #b7bdf8;
 @define-color text #cad3f5;
+/* @define-color text @yellow; */
 @define-color subtext1 #b8c0e0;
 @define-color subtext0 #a5adcb;
 @define-color overlay2 #939ab7;
@@ -21,7 +22,7 @@
 @define-color surface2 #5b6078;
 @define-color surface1 #494d64;
 @define-color surface0 #363a4f;
-@define-color base #24273a;
+@define-color catbase #24273a;
 @define-color mantle #1e2030;
 @define-color crust #181926;
 
@@ -31,11 +32,12 @@ font-weight: bold;
 }
 
 window#waybar {
-    background: rgba (0, 0, 0, 0.78125);
+/*     background: rgba (0, 0, 0, 0.78125); */
     border-radius: 12px;
 	border-bottom: 2px;
     border-style: solid;
-	border-color: @base;
+	color: @text;
+	border-color: @catbase;
 }
 
 #workspaces button {
@@ -59,6 +61,76 @@ window#waybar {
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
+
+#cpu{
+	color: @peach
+}
+#temperature{
+	color: @red
+}
+#memory{
+	color: @lavender
+}
+#custom-cava_mviz{
+	color: @rosewater
+}
+
+
+
+
+#custom-menu{
+	color: @peach
+}
+
+#idle_inhibitor{
+	color: @sapphire
+}
+
+#clock{
+	color: @mauve
+}
+
+#custom-lock{
+	color: @sky
+}
+
+#custom-keybinds{
+	color: @maroon
+}
+
+
+
+
+
+#custom-network_speed {
+	color: @teal
+}
+
+#battery {
+	color: @green
+}
+
+#pulseaudio {
+	color: @yellow
+}
+
+#custom-keyboard_state {
+	color: @lavender
+}
+
+#custom-keyboard {
+	color: @pink
+}
+
+#custom-power {
+	color: @flamingo
+}
+
+
+
+
+
+
 
 #workspaces button:hover {
 /* 	color: @peach; */
