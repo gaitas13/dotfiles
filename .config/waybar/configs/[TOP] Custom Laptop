@@ -45,8 +45,10 @@
 	], 
 
 "modules-right": [
-	"network#speed",
-	"custom/separator#dot-line",
+	//unsure
+	//"network#speed",
+	//"custom/separator#dot-line",
+
 	"custom/swaync",
 	"tray",
 	"mpris", 
