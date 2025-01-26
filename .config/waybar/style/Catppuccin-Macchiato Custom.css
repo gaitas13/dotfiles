@@ -27,33 +27,59 @@
 @define-color crust #181926;
 
 * {
-font-family: "SauceCodePro NFM";
-font-weight: bold;
+	font-family: "SauceCodePro NFM";
+	font-weight: bold;
+	border: none;
+	border-radius: 0;
 }
 
 window#waybar {
-/*     background: rgba (0, 0, 0, 0.78125); */
-    border-radius: 12px;
-	border-bottom: 2px;
-    border-style: solid;
+	background: rgba(0, 0, 0, 0);
+}
+
+#window {
 	color: @text;
-	border-color: @catbase;
+	background: @catbase;
+	border-radius: 15px;
+/* 	margin-left: 10px; */
+/* 	margin-right: 60px; */
+}
+
+
+
+
+
+
+window#waybar.empty  #window{
+	border: 0px;
+	margin: 0Px;
+	padding: 0px;
+	background-color: transparent;
+}
+
+
+
+tooltip {
+	background: @catbase;
+	border-radius: 15px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: @subtext0;
+}
+
+#workspaces {
+	background: @catbase;
 }
 
 #workspaces button {
+/* 	padding: 5px; */
     color: @text;
-    box-shadow: none;
-	text-shadow: none;
-/*     padding: 0px; */
-/*     border-radius: 9px; */
-/*     padding-left: 4px; */
-/*     padding-right: 4px; */
+    border-radius: 15px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button.active {
-/* 	border-radius: 15px; */
 	color: @peach;
 	background-color:  @text;
 /*     padding-left: 8px; */
@@ -62,68 +88,94 @@ window#waybar {
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+#workspaces,
+#cpu,
+#temperature,
+#memory,
+#custom-cava_mviz,
+#custom-menu,
+#idle_inhibitor,
+#clock,
+#custom-lock,
+#custom-keybinds,
+#custom-network_speed,
+#custom-swaync,
+#tray,
+#swaync,
+#mpris,
+#bluetooth,
+#battery,
+#backlight,
+#pulseaudio,
+#custom-keyboard_state,
+#custom-keyboard,
+#custom-power {
+background-color: @catbase;
+border-radius: 15px;
+padding-left: 5px;
+padding-right: 5px;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+
+
 #cpu{
-	color: @peach
+	color: @peach;
 }
 #temperature{
-	color: @red
+	color: @red;
 }
 #memory{
-	color: @lavender
+	color: @lavender;
 }
 #custom-cava_mviz{
-	color: @rosewater
+	color: @rosewater;
 }
-
-
 
 
 #custom-menu{
-	color: @peach
+	color: @peach;
 }
 
 #idle_inhibitor{
-	color: @sapphire
+	color: @sapphire;
 }
 
 #clock{
-	color: @mauve
+	color: @mauve;
 }
 
 #custom-lock{
-	color: @sky
+	color: @sky;
 }
 
 #custom-keybinds{
-	color: @maroon
+	color: @maroon;
 }
 
-
-
-
-
 #custom-network_speed {
-	color: @teal
+	color: @teal;
 }
 
 #battery {
-	color: @green
+	color: @green;
 }
 
 #pulseaudio {
-	color: @yellow
+	color: @yellow;
 }
 
 #custom-keyboard_state {
-	color: @lavender
+	color: @lavender;
 }
 
 #custom-keyboard {
-	color: @pink
+	color: @pink;
 }
 
 #custom-power {
-	color: @flamingo
+	color: @flamingo;
 }
 
 
