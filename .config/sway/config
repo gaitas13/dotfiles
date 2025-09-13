@@ -3,11 +3,11 @@
 ### Variables
 
 # Logo key. Use Mod1 for Alt.
-set $mod Mod4
+set $mod mod4
 #set $background ~/Pictures/wallpaper/arch.jpg
 
 # Your preferred terminal emulator
-set $term kitty
+set $term ghostty
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -21,6 +21,7 @@ set $menu rofi -show drun
 
 # Start your launcher
 bindsym $mod+d exec $menu|xargs swaymsg exec --
+bindsym --release Super_L exec $menu|xargs swaymsg exec --
 
 # Home row direction keys, like vim
 set $left h
@@ -361,4 +362,14 @@ exec pavucontrol-qt
 #GTK+ apps long time to load fix
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
+
+#swayfx
+
+include $HOME/.config/sway/blur
+include $HOME/.config/sway/corner
+
+
 include /etc/sway/config.d/*
+
+
+
