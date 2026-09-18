@@ -81,5 +81,5 @@
 
 
 
-(setq projectile-project-search-path '(("~/Documents/0_mycode" . 1)))
+(setq projectile-project-search-path '(("~/0_mycode" . 1)))
 

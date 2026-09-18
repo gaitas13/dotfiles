@@ -1,2 +1,4 @@
-theme = catppuccin-macchiato
+theme = Catppuccin Macchiato
 font-family = AnkaCoder Nerd Font
+window-width = 100
+window-height = 30
